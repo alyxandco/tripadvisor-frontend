@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: TS-Reg, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1184px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 32px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  /* border: solid 1px #010003; */
+  /* height: 3000px; */
+}
+
+h1 {
+  font-family: TS-Med, Helvetica, sans-serif;
+  font-size: 54px;
+  font-weight: bolder;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1 span {
+  color: #fe5d5d;
+}
+
+h2 {
+  font-family: TS-Med;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-family: TS-Med;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ------------------------------------- */
+/* -- HEADER ----------------------------- */
+/* ------------------------------------- */
+
+.header_container {
+  width: 1184px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  /* border: solid 1px #010003; */
+}
+
+header {
+  /* background-color: #ffffff; */
+  /* border: solid 1px #f3735f; */
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 188px;
+}
+
+header nav {
+  font-weight: bold;
+  height: 60px;
+  width: 500px;
+  display: flex;
+  /* border: solid 1px #440ad7; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+header button {
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 8px 12px;
+  border: none;
+}
+
+header a {
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+
+header a:hover {
+  background-color: #ededed;
+}
+
+/* ------------------------------------- */
+/* -- MAIN ----------------------------- */
+/* ------------------------------------- */
+
+h1 + p {
+  font-size: 14px;
+  padding-bottom: 40px;
+}
+
+h1 + p span {
+  text-decoration: underline;
+}
+
+/* ---nav principale-------------------- */
+
+main nav {
+  /* border: solid 1px #440ad7; */
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.menubutton {
+  font-weight: bold;
+  flex: 1;
+  border: solid #000000;
+  border-radius: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+}
+
+.menubutton:hover {
+  color: white;
+  background-color: black;
+}
+
+section div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---images OLD-------------------------------- */
+
+/* .main_images {
+  display: flex;
+}
+.first_img {
+  width: 694px;
+  height: 430px;
+  object-fit: cover;
+}
+
+.secondary_imgs {
+  flex-direction: column;
+  width: 430px;
+  height: 430px;
+  object-fit: cover;
+  padding-left: 2px;
+} */
+
+/* ---images -------------------------------- */
+
+/* main_images */
+.main_images {
+  height: 430px;
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 2px;
+}
+.main_images .first_img {
+  /* background-color: blue; */
+  height: 100%;
+  flex: 1;
+}
+.main_images .secondary_imgs {
+  /* background-color: green; */
+  /* flex-direction: column; */
+  height: 100%;
+  width: 480px;
+}
+.main_images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.opacity:hover {
+  opacity: 0.75;
+}
+
+.main_images .secondary_imgs div {
+  flex-direction: column;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: calc(50% - 1px);
+}
+
+.main_images .secondary_imgs div:first-child {
+  margin-bottom: 2px;
+}
+
+/* ---nav fil d'ariane -------------------- */
+
+.fil_ariane {
+  padding: 20px 0px;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.fil_ariane p:nth-child(5) {
+  /* border: solid 1px #440ad7; */
+  flex: 1;
+  text-align: right;
+}
+
+/* ---section 2 colonnes (textes/carto) -------- */
+
+.main_text {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.first {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 560px;
+}
+
+.first p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: lighter;
+  /* letter-spacing: 200px; */
+}
+.second {
+  width: 410px;
+  flex-direction: column;
+}
+
+.carto-text {
+  flex-direction: column;
+  background-color: #fd5d5d;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.second p {
+  padding: 15px 15px;
+}
+
+.second img {
+  /* padding-top: 30px; */
+  width: 100%;
+}
+
+.travelbutton {
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 230px;
+}
+
+.cartographie {
+  border-radius: 10px;
+}
+
+/* ---section 2 colonnes (textes/carroussel photos) -------- */
+
+.carr div {
+  /* border: solid 1px black; */
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* section div {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.immanquables {
+  /* background-color: #5a30b3; */
+  display: flex;
+  gap: 70px;
+}
+
+.colonne-texte {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 300px;
+}
+
+.divertir {
+  font-family: TS-Reg;
+  font-size: 24px;
+  /* font-weight: bold; */
+  /* border: solid 1px black; */
+  padding-bottom: 25px;
+}
+
+.divertir + p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.divertir span {
+  text-decoration: underline;
+}
+
+.carroussel > div {
+  /* border: solid 1px black; */
+  width: 270px;
+  /* height: 200px; */
+}
+
+.carroussel {
+  width: 850px;
+  /* flex: 1; */
+  /* display: flex; */
+  /* border: solid 1px black; */
+  gap: 15px;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+}
+
+.pastille {
+  flex-shrink: 0;
+  flex-direction: column;
+}
+
+.pastille img {
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.cartouche {
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.cartouche img {
+  width: 30%;
+  /* object-fit: cover; */
+}
+
+.cartouche-title {
+  font-family: TS-Med;
+  font-size: 18px;
+  font-weight: bold;
+  /* border: solid 1px black; */
+}
+
+.cartouche-number {
+  font-family: TS-Reg;
+  font-weight: lighter;
+  font-size: 12px;
+  padding-top: 4px;
+}
+
+.cartouche-texte {
+  font-size: 14px;
+}
+
+/* ---Footer -------- */
+footer {
+  height: 100px;
+  /* border: solid 1px black; */
+}
